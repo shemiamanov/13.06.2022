@@ -1,0 +1,186 @@
+﻿@model List<Car>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <section class="home">
+        <div class="text1">
+            <img src="" alt="">
+            <h1>FIND YOUR RENT A CAR</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </section>
+    <section class="services">
+        <div class="text2">
+            <span>OUR BEST</span>
+            <span class="sp1">OFFERS</span>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a arcu eu justo euismod rutrum. Quisque
+                id enim ac tortor malesuada vestibulum non quis turpis. Ut eget ornare arcu. Suspendisse velit mi,
+                pulvinar sed mauris eget, efficitur tempor ex.
+            </p>
+        </div>
+        <section class="OFFERS">
+            <div class="row d-flex">
+                <div class="col-4">
+                    <div class="page2">
+                        <div class=" mb-3" style="max-width: 540px; margin-left: 100px;height: 15vh;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <i class="bi bi-aspect-ratio-fill" style="font-size: 50px;color: blue;"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Featured Luxury Cars</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, onsectetuer adipiscing elitcommodo ligula eget dolor.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mb-3" style="max-width: 540px;margin-left: 100px;height: 15vh;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <i class="bi bi-aspect-ratio-fill" style="font-size: 50px;color: blue;"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Insurance Included</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, onsectetuer adipiscing elitcommodo ligula eget dolor..</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mb-3" style="max-width: 540px; margin-left: 100px;height: 15vh;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <i class="bi bi-aspect-ratio-fill" style="font-size: 50px; color: blue;"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Available 12 640 Cars</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, onsectetuer adipiscing elitcommodo ligula eget dolor..</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <img src="http://malikhassan.com/html/car-rental/html/images/featureCarImg.png" alt="">
+                </div>
+                <div class="col-4">
+                    <div class="page2">
+                        <div class=" mb-3" style="max-width: 540px; margin-left: 100px;height: 15vh;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <i class="bi bi-aspect-ratio-fill" style="font-size: 50px;color: blue;"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Any Locations Rent</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, onsectetuer adipiscing elitcommodo ligula eget dolor.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" mb-3" style="max-width: 540px;margin-left: 100px;height: 15vh;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <i class="bi bi-aspect-ratio-fill" style="font-size: 50px;color: blue;"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Insurance Included</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, onsectetuer adipiscing elitcommodo ligula eget dolor..</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mb-3" style="max-width: 540px; margin-left: 100px;height: 15vh;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <i class="bi bi-aspect-ratio-fill" style="font-size: 50px;color: blue;"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Available 12 640 Cars</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, onsectetuer adipiscing elitcommodo ligula eget dolor..</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+    <section class="vehicles">
+        <div class="text3">
+            <span>VEHICLE MODELS</span>
+            <span class="sp1">FOR RENT</span>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <ul style="margin: left 200px;">
+                    @foreach (var item in Model)
+                    {
+                    <li>@item.Name</li>
+                    <hr>
+                    }
+                  
+                </ul>
+            </div>
+            <div class="col-4">
+                <img src="http://malikhassan.com/html/car-rental/html/images/car01.jpg" alt="" style="width: 107%;">
+            </div>
+            <div class="col-4">
+                <ul>
+                    @foreach (var item in Model)
+                    {
+                    <li>Model</li>
+                    <hr>
+
+                    }
+                    <button class="btn1"> <i class="bi bi-calendar2"></i>RESERVE NOW</button>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="Logo">
+        <div class="naber" style="display:flex ; padding-left: 80px;gap: 250px;padding-top: 250px;">
+            <div class=" text4">
+                <i class="bi bi-camera-reels" style="background-color: darkblue;"></i>
+                <h2>399</h2>
+                <p>Happy Client</p>
+            </div>
+            <div class=" text4">
+                <i class="bi bi-camera-reels" style="background-color: darkblue;"></i>
+                <h2>399</h2>
+                <p>Happy Client</p>
+            </div>
+            <div class=" text4">
+                <i class="bi bi-camera-reels" style="background-color: darkblue;"></i>
+                <h2>399</h2>
+                <p>Happy Client</p>
+            </div>
+            <div class=" text4">
+                <i class="bi bi-camera-reels" style="background-color: darkblue;"></i>
+                <h2>399</h2>
+                <p>Happy Client</p>
+            </div>
+
+        </div>
+    </section>
+</main>
